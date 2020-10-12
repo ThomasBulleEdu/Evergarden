@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class compassCheck : MonoBehaviour
 {
@@ -9,9 +9,9 @@ public class compassCheck : MonoBehaviour
     public GameObject EastCheck;
     public GameObject SouthCheck;
     public GameObject WestCheck;
-    public GameObject GameOver;
-    public GameObject NextLevel;
-    public int roundTrack;
+    public GameObject thisStatue;
+    public sceneManager sceneManagerREF;
+    public string hitName;
     public bool isClear = true;
     public bool isWet = false;
     public bool isNorthReady = false;
@@ -19,6 +19,11 @@ public class compassCheck : MonoBehaviour
     public bool isSouthReady = false;
     public bool isWestReady = false;
     public bool isCat = false;
+    public bool isStatue = false;
+    public bool falseCheck = false;
+    public bool catIsWet = false;
+    public bool statueExist = false;
+
 
    /* public Color Blue;
     public Color Purple;
@@ -32,27 +37,44 @@ public class compassCheck : MonoBehaviour
     void Start()
     {
         //        ParentScript = this.transform.parent.GameObject.GetComponent<ScriptName>();
-        GameOver.SetActive(false);
-        NextLevel.SetActive(false);
+  
+        if (isCat == true)
+            {
+                this.GetComponent<SpriteRenderer>().material.color = Color.black;
+            }
+        checkCompass();
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
-        if (roundTrack == 10)
-        {
-            NextLevel.SetActive(true);
-        }
-        if (Input.GetKeyUp("z"))
+        if (Input.GetKeyUp("z") && catIsWet == false)
         {
             checkCompass();
-            roundTrack++;
-        }
-        if (Input.GetKeyUp("r"))
-        {
-            resetRound();
         }
         checkReady();
+        if (statueExist == false) { 
+            if (Input.GetMouseButtonDown(0))
+        {
+            Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100f));
+            Vector3 direction = worldMousePosition - Camera.main.transform.position;
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, 100.0f))
+            {
+                    hit.transform.GetComponent<SpriteRenderer>().material.color = Color.gray;
+                
+                Debug.Log("You selected the " + hit.transform.name);
+                hitName = hit.transform.name;
+
+            //        SetStatue();
+                GetGameObject();
+                // statueGameOb.GetComponent<compassCheck>(SetStatue());
+            }
+            }
+        }
 
     }
  //   ParentScript.ScriptFunction();
@@ -64,7 +86,7 @@ public class compassCheck : MonoBehaviour
         {
             if (isClear == true && isWet == true)
             {
-                this.GetComponent<SpriteRenderer>().material.color = Color.cyan;
+                this.GetComponent<SpriteRenderer>().material.color = Color.blue;
                 isClear = false;
             }
             else if (isClear == true && isNorthReady == true)
@@ -90,43 +112,57 @@ public class compassCheck : MonoBehaviour
         }
         else if (isCat == true)
         {
+            if (NorthCheck.GetComponent<SpriteRenderer>().material.color == Color.blue || EastCheck.GetComponent<SpriteRenderer>().material.color == Color.blue || SouthCheck.GetComponent<SpriteRenderer>().material.color == Color.blue || WestCheck.GetComponent<SpriteRenderer>().material.color == Color.blue)
+            {
+                this.GetComponent<SpriteRenderer>().material.color = Color.blue;
+                isClear = false;
+                sceneManagerREF.GameOver.SetActive(true);
+                sceneManagerREF.isInputEnabled = falseCheck;
+                catIsWet = true;
+            }
+            /*    else if (isStatue == true)
+                    {
+                        isClear = false;
+                    }*/
+        }
+        if (isStatue == false)
+        {
             if (isClear == true && isWet == true)
             {
-                this.GetComponent<SpriteRenderer>().material.color = Color.cyan;
+                this.GetComponent<SpriteRenderer>().material.color = Color.blue;
                 isClear = false;
-                GameOver.SetActive(true);
             }
             else if (isClear == true && isNorthReady == true)
             {
                 this.GetComponent<SpriteRenderer>().material.color = Color.magenta;
                 isClear = false;
-                GameOver.SetActive(true);
             }
             else if (isClear == true && isEastReady == true)
             {
                 this.GetComponent<SpriteRenderer>().material.color = Color.red;
                 isClear = false;
-                GameOver.SetActive(true);
             }
             else if (isClear == true && isSouthReady == true)
             {
                 this.GetComponent<SpriteRenderer>().material.color = Color.white;
                 isClear = false;
-                GameOver.SetActive(true);
             }
             else if (isClear == true && isWestReady == true)
             {
                 this.GetComponent<SpriteRenderer>().material.color = Color.yellow;
                 isClear = false;
-                GameOver.SetActive(true);
             }
+        }
+        else if (isStatue == true)
+        {
+            Debug.Log("Ping");
         }
     }
     void checkReady()
     {    
         if(isClear == true) 
         {    
-            if (NorthCheck.GetComponent<SpriteRenderer>().material.color == Color.cyan || EastCheck.GetComponent<SpriteRenderer>().material.color == Color.cyan || SouthCheck.GetComponent<SpriteRenderer>().material.color == Color.cyan || WestCheck.GetComponent<SpriteRenderer>().material.color == Color.cyan)
+            if (NorthCheck.GetComponent<SpriteRenderer>().material.color == Color.blue || EastCheck.GetComponent<SpriteRenderer>().material.color == Color.blue || SouthCheck.GetComponent<SpriteRenderer>().material.color == Color.blue || WestCheck.GetComponent<SpriteRenderer>().material.color == Color.blue)
                 {
                     isWet = true; 
                 }
@@ -148,9 +184,17 @@ public class compassCheck : MonoBehaviour
             }
         }
     }
-    void resetRound()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
 
+    void GetGameObject()
+    {
+        if(statueExist == false)
+        {
+            thisStatue = GameObject.Find(hitName);
+            thisStatue.GetComponent<compassCheck>().isStatue = true;
+            thisStatue.GetComponent<compassCheck>().isClear = false;
+            statueExist = true;
+        }
+
+
+    }
 }

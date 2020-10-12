@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 79994034}
   - component: {fileID: 79994035}
   - component: {fileID: 79994036}
+  - component: {fileID: 79994037}
   m_Layer: 0
   m_Name: Grid 06-08
   m_TagString: Untagged
@@ -249,9 +250,9 @@ MonoBehaviour:
   EastCheck: {fileID: 180143119}
   SouthCheck: {fileID: 901168811}
   WestCheck: {fileID: 1179540702}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -259,6 +260,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &79994036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -309,6 +314,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &79994037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79994033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &92294629
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +338,7 @@ GameObject:
   - component: {fileID: 92294630}
   - component: {fileID: 92294631}
   - component: {fileID: 92294632}
+  - component: {fileID: 92294633}
   m_Layer: 0
   m_Name: 'Grid 03-06 '
   m_TagString: Untagged
@@ -357,9 +376,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1309469976}
   SouthCheck: {fileID: 434941512}
   WestCheck: {fileID: 1664932949}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -367,6 +386,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &92294632
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -417,6 +440,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &92294633
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92294629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &111018902
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +464,7 @@ GameObject:
   - component: {fileID: 111018903}
   - component: {fileID: 111018904}
   - component: {fileID: 111018905}
+  - component: {fileID: 111018906}
   m_Layer: 0
   m_Name: Grid 04-03
   m_TagString: Untagged
@@ -465,9 +502,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1863422914}
   SouthCheck: {fileID: 1168514952}
   WestCheck: {fileID: 267227458}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -475,6 +512,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &111018905
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -525,6 +566,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &111018906
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111018902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &136731964
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +590,7 @@ GameObject:
   - component: {fileID: 136731965}
   - component: {fileID: 136731966}
   - component: {fileID: 136731967}
+  - component: {fileID: 136731968}
   m_Layer: 0
   m_Name: Grid 03-07
   m_TagString: Untagged
@@ -573,9 +628,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1555466542}
   SouthCheck: {fileID: 92294629}
   WestCheck: {fileID: 975464652}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -583,6 +638,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &136731967
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -633,6 +692,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &136731968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136731964}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &158055848
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +716,7 @@ GameObject:
   - component: {fileID: 158055851}
   - component: {fileID: 158055850}
   - component: {fileID: 158055849}
+  - component: {fileID: 158055852}
   m_Layer: 0
   m_Name: Grid 01-04
   m_TagString: Untagged
@@ -717,9 +790,9 @@ MonoBehaviour:
   EastCheck: {fileID: 602580432}
   SouthCheck: {fileID: 1177412743}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -727,6 +800,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!4 &158055851
 Transform:
   m_ObjectHideFlags: 0
@@ -741,6 +818,19 @@ Transform:
   m_Father: {fileID: 550950082}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &158055852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158055848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &180143119
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,6 +842,7 @@ GameObject:
   - component: {fileID: 180143120}
   - component: {fileID: 180143121}
   - component: {fileID: 180143122}
+  - component: {fileID: 180143123}
   m_Layer: 0
   m_Name: Grid 07-08
   m_TagString: Untagged
@@ -789,9 +880,9 @@ MonoBehaviour:
   EastCheck: {fileID: 834426675}
   SouthCheck: {fileID: 353198739}
   WestCheck: {fileID: 79994033}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -799,6 +890,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &180143122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -849,6 +944,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &180143123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180143119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &183685984
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +968,7 @@ GameObject:
   - component: {fileID: 183685985}
   - component: {fileID: 183685986}
   - component: {fileID: 183685987}
+  - component: {fileID: 183685988}
   m_Layer: 0
   m_Name: Grid 07-03
   m_TagString: Untagged
@@ -897,9 +1006,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1419694447}
   SouthCheck: {fileID: 1455922364}
   WestCheck: {fileID: 196354868}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -907,6 +1016,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &183685987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -957,6 +1070,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &183685988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183685984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &189359915
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +1094,7 @@ GameObject:
   - component: {fileID: 189359916}
   - component: {fileID: 189359917}
   - component: {fileID: 189359918}
+  - component: {fileID: 189359919}
   m_Layer: 0
   m_Name: Grid 02-01
   m_TagString: Untagged
@@ -1005,9 +1132,9 @@ MonoBehaviour:
   EastCheck: {fileID: 594586529}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 446506980}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -1015,6 +1142,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &189359918
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1065,6 +1196,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &189359919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189359915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &196354868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1220,7 @@ GameObject:
   - component: {fileID: 196354869}
   - component: {fileID: 196354870}
   - component: {fileID: 196354871}
+  - component: {fileID: 196354872}
   m_Layer: 0
   m_Name: Grid 06-03
   m_TagString: Untagged
@@ -1113,9 +1258,9 @@ MonoBehaviour:
   EastCheck: {fileID: 183685984}
   SouthCheck: {fileID: 1849895563}
   WestCheck: {fileID: 1863422914}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -1123,6 +1268,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &196354871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1173,6 +1322,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &196354872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196354868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &267227458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,6 +1346,7 @@ GameObject:
   - component: {fileID: 267227459}
   - component: {fileID: 267227460}
   - component: {fileID: 267227461}
+  - component: {fileID: 267227462}
   m_Layer: 0
   m_Name: Grid 03-03
   m_TagString: Untagged
@@ -1221,9 +1384,9 @@ MonoBehaviour:
   EastCheck: {fileID: 111018902}
   SouthCheck: {fileID: 1284208831}
   WestCheck: {fileID: 1627717876}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -1231,6 +1394,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &267227461
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1281,6 +1448,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &267227462
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267227458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &295900220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,7 +1554,7 @@ RectTransform:
   - {fileID: 4058570}
   - {fileID: 2136870494}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1392,6 +1572,7 @@ GameObject:
   - component: {fileID: 296241450}
   - component: {fileID: 296241451}
   - component: {fileID: 296241452}
+  - component: {fileID: 296241453}
   m_Layer: 0
   m_Name: Grid 06-01
   m_TagString: Untagged
@@ -1429,9 +1610,9 @@ MonoBehaviour:
   EastCheck: {fileID: 2142699134}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 1043859839}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -1439,6 +1620,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &296241452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1489,6 +1674,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &296241453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296241449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &350552431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1698,7 @@ GameObject:
   - component: {fileID: 350552432}
   - component: {fileID: 350552433}
   - component: {fileID: 350552434}
+  - component: {fileID: 350552435}
   m_Layer: 0
   m_Name: Grid 08-06
   m_TagString: Untagged
@@ -1537,9 +1736,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 927672728}
   WestCheck: {fileID: 1009707759}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -1547,6 +1746,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &350552434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1597,6 +1800,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &350552435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350552431}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &353198739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1824,7 @@ GameObject:
   - component: {fileID: 353198740}
   - component: {fileID: 353198741}
   - component: {fileID: 353198742}
+  - component: {fileID: 353198743}
   m_Layer: 0
   m_Name: Grid 07-07
   m_TagString: Untagged
@@ -1645,9 +1862,9 @@ MonoBehaviour:
   EastCheck: {fileID: 496464559}
   SouthCheck: {fileID: 1009707759}
   WestCheck: {fileID: 901168811}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -1655,6 +1872,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &353198742
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1705,6 +1926,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &353198743
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353198739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &377470069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,6 +1950,7 @@ GameObject:
   - component: {fileID: 377470070}
   - component: {fileID: 377470071}
   - component: {fileID: 377470072}
+  - component: {fileID: 377470073}
   m_Layer: 0
   m_Name: Grid 06-04
   m_TagString: Untagged
@@ -1753,16 +1988,20 @@ MonoBehaviour:
   EastCheck: {fileID: 1268219085}
   SouthCheck: {fileID: 196354868}
   WestCheck: {fileID: 823221820}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
-  isEastReady: 0
+  isEastReady: 1
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &377470072
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1813,6 +2052,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &377470073
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377470069}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &410732966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,9 +2163,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 0}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -1921,6 +2173,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!1 &430015003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,6 +2188,7 @@ GameObject:
   - component: {fileID: 430015004}
   - component: {fileID: 430015005}
   - component: {fileID: 430015006}
+  - component: {fileID: 430015007}
   m_Layer: 0
   m_Name: Grid 02-05
   m_TagString: Untagged
@@ -1969,9 +2226,9 @@ MonoBehaviour:
   EastCheck: {fileID: 434941512}
   SouthCheck: {fileID: 602580432}
   WestCheck: {fileID: 1923745011}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -1979,6 +2236,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &430015006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2029,6 +2290,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &430015007
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430015003}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &434941512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2314,7 @@ GameObject:
   - component: {fileID: 434941513}
   - component: {fileID: 434941514}
   - component: {fileID: 434941515}
+  - component: {fileID: 434941516}
   m_Layer: 0
   m_Name: Grid 03-05
   m_TagString: Untagged
@@ -2077,9 +2352,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1457195738}
   SouthCheck: {fileID: 515778800}
   WestCheck: {fileID: 430015003}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -2087,6 +2362,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &434941515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2137,6 +2416,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &434941516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434941512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &446506980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,6 +2440,7 @@ GameObject:
   - component: {fileID: 446506983}
   - component: {fileID: 446506982}
   - component: {fileID: 446506981}
+  - component: {fileID: 446506984}
   m_Layer: 0
   m_Name: Grid 01-01
   m_TagString: Untagged
@@ -2221,9 +2514,9 @@ MonoBehaviour:
   EastCheck: {fileID: 189359915}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -2231,6 +2524,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!4 &446506983
 Transform:
   m_ObjectHideFlags: 0
@@ -2245,6 +2542,19 @@ Transform:
   m_Father: {fileID: 550950082}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &446506984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446506980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &491697406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2256,6 +2566,7 @@ GameObject:
   - component: {fileID: 491697407}
   - component: {fileID: 491697408}
   - component: {fileID: 491697409}
+  - component: {fileID: 491697410}
   m_Layer: 0
   m_Name: Grid 06-06
   m_TagString: Untagged
@@ -2293,9 +2604,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1009707759}
   SouthCheck: {fileID: 1070036876}
   WestCheck: {fileID: 555635173}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -2303,6 +2614,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &491697409
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2353,6 +2668,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &491697410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491697406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &496464559
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,6 +2692,7 @@ GameObject:
   - component: {fileID: 496464560}
   - component: {fileID: 496464561}
   - component: {fileID: 496464562}
+  - component: {fileID: 496464563}
   m_Layer: 0
   m_Name: Grid 08-07
   m_TagString: Untagged
@@ -2401,9 +2730,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 350552431}
   WestCheck: {fileID: 353198739}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -2411,6 +2740,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &496464562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2461,6 +2794,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &496464563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496464559}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &515778800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,6 +2818,7 @@ GameObject:
   - component: {fileID: 515778801}
   - component: {fileID: 515778802}
   - component: {fileID: 515778803}
+  - component: {fileID: 515778804}
   m_Layer: 0
   m_Name: Grid 03-04
   m_TagString: Untagged
@@ -2509,16 +2856,20 @@ MonoBehaviour:
   EastCheck: {fileID: 1554319320}
   SouthCheck: {fileID: 267227458}
   WestCheck: {fileID: 602580432}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
-  isWet: 1
+  isWet: 0
   isNorthReady: 0
-  isEastReady: 0
+  isEastReady: 1
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &515778803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2569,6 +2920,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &515778804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515778800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &550950081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,7 +3029,7 @@ Transform:
   - {fileID: 1951123515}
   - {fileID: 705406504}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555635173
 GameObject:
@@ -2678,6 +3042,7 @@ GameObject:
   - component: {fileID: 555635174}
   - component: {fileID: 555635175}
   - component: {fileID: 555635176}
+  - component: {fileID: 555635177}
   m_Layer: 0
   m_Name: Grid 05-06
   m_TagString: Untagged
@@ -2715,9 +3080,9 @@ MonoBehaviour:
   EastCheck: {fileID: 491697406}
   SouthCheck: {fileID: 1701831311}
   WestCheck: {fileID: 1309469976}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -2725,6 +3090,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &555635176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2775,6 +3144,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &555635177
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555635173}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &594586529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,6 +3168,7 @@ GameObject:
   - component: {fileID: 594586530}
   - component: {fileID: 594586531}
   - component: {fileID: 594586532}
+  - component: {fileID: 594586533}
   m_Layer: 0
   m_Name: Grid 03-01
   m_TagString: Untagged
@@ -2823,9 +3206,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1263871763}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 189359915}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -2833,6 +3216,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &594586532
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2883,6 +3270,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &594586533
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594586529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &602580432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,6 +3294,7 @@ GameObject:
   - component: {fileID: 602580433}
   - component: {fileID: 602580434}
   - component: {fileID: 602580435}
+  - component: {fileID: 602580436}
   m_Layer: 0
   m_Name: Grid 02-04
   m_TagString: Untagged
@@ -2931,9 +3332,9 @@ MonoBehaviour:
   EastCheck: {fileID: 515778800}
   SouthCheck: {fileID: 1627717876}
   WestCheck: {fileID: 158055848}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -2941,6 +3342,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &602580435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2991,6 +3396,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &602580436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602580432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &643770320
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,6 +3420,7 @@ GameObject:
   - component: {fileID: 643770321}
   - component: {fileID: 643770322}
   - component: {fileID: 643770323}
+  - component: {fileID: 643770324}
   m_Layer: 0
   m_Name: Grid 07-05
   m_TagString: Untagged
@@ -3039,9 +3458,9 @@ MonoBehaviour:
   EastCheck: {fileID: 927672728}
   SouthCheck: {fileID: 1268219085}
   WestCheck: {fileID: 1070036876}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -3049,6 +3468,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &643770323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3099,6 +3522,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &643770324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643770320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705406503
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,9 +3633,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 0}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -3207,6 +3643,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3295,7 +3735,8 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: -18.71, y: 3, z: -10.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1470366089}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
@@ -3310,6 +3751,7 @@ GameObject:
   - component: {fileID: 733068336}
   - component: {fileID: 733068337}
   - component: {fileID: 733068338}
+  - component: {fileID: 733068339}
   m_Layer: 0
   m_Name: Grid 05-02
   m_TagString: Untagged
@@ -3347,16 +3789,20 @@ MonoBehaviour:
   EastCheck: {fileID: 1849895563}
   SouthCheck: {fileID: 1043859839}
   WestCheck: {fileID: 1168514952}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
-  isClear: 1
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
+  isClear: 0
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
-  isCat: 0
+  isCat: 1
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &733068338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3407,6 +3853,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &733068339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733068335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &815724593
 GameObject:
   m_ObjectHideFlags: 0
@@ -3418,6 +3877,7 @@ GameObject:
   - component: {fileID: 815724596}
   - component: {fileID: 815724595}
   - component: {fileID: 815724594}
+  - component: {fileID: 815724597}
   m_Layer: 0
   m_Name: Grid 01-06
   m_TagString: Untagged
@@ -3491,9 +3951,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1664932949}
   SouthCheck: {fileID: 1923745011}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -3501,6 +3961,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!4 &815724596
 Transform:
   m_ObjectHideFlags: 0
@@ -3515,6 +3979,19 @@ Transform:
   m_Father: {fileID: 550950082}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &815724597
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815724593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &823221820
 GameObject:
   m_ObjectHideFlags: 0
@@ -3526,6 +4003,7 @@ GameObject:
   - component: {fileID: 823221821}
   - component: {fileID: 823221822}
   - component: {fileID: 823221823}
+  - component: {fileID: 823221824}
   m_Layer: 0
   m_Name: Grid 05-04
   m_TagString: Untagged
@@ -3563,9 +4041,9 @@ MonoBehaviour:
   EastCheck: {fileID: 377470069}
   SouthCheck: {fileID: 1863422914}
   WestCheck: {fileID: 1554319320}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -3573,6 +4051,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &823221823
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3623,6 +4105,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &823221824
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823221820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &834426675
 GameObject:
   m_ObjectHideFlags: 0
@@ -3634,6 +4129,7 @@ GameObject:
   - component: {fileID: 834426676}
   - component: {fileID: 834426677}
   - component: {fileID: 834426678}
+  - component: {fileID: 834426679}
   m_Layer: 0
   m_Name: Grid 08-08
   m_TagString: Untagged
@@ -3671,16 +4167,20 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 496464559}
   WestCheck: {fileID: 180143119}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
-  isWet: 0
+  isWet: 1
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &834426678
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3731,6 +4231,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &834426679
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834426675}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &901168811
 GameObject:
   m_ObjectHideFlags: 0
@@ -3742,6 +4255,7 @@ GameObject:
   - component: {fileID: 901168812}
   - component: {fileID: 901168813}
   - component: {fileID: 901168814}
+  - component: {fileID: 901168815}
   m_Layer: 0
   m_Name: Grid 06-07
   m_TagString: Untagged
@@ -3779,16 +4293,20 @@ MonoBehaviour:
   EastCheck: {fileID: 353198739}
   SouthCheck: {fileID: 491697406}
   WestCheck: {fileID: 1427416104}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
-  isEastReady: 0
+  isEastReady: 1
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &901168814
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3839,6 +4357,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &901168815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901168811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &913353368
 GameObject:
   m_ObjectHideFlags: 0
@@ -3937,9 +4468,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 0}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -3947,6 +4478,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!1 &927672728
 GameObject:
   m_ObjectHideFlags: 0
@@ -3958,6 +4493,7 @@ GameObject:
   - component: {fileID: 927672729}
   - component: {fileID: 927672730}
   - component: {fileID: 927672731}
+  - component: {fileID: 927672732}
   m_Layer: 0
   m_Name: Grid 08-05
   m_TagString: Untagged
@@ -3995,9 +4531,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 1382573630}
   WestCheck: {fileID: 643770320}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -4005,6 +4541,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &927672731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4055,6 +4595,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &927672732
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927672728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,6 +4702,7 @@ GameObject:
   - component: {fileID: 972140366}
   - component: {fileID: 972140367}
   - component: {fileID: 972140368}
+  - component: {fileID: 972140369}
   m_Layer: 0
   m_Name: Grid 02-02
   m_TagString: Untagged
@@ -4186,9 +4740,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1284208831}
   SouthCheck: {fileID: 189359915}
   WestCheck: {fileID: 1082625177}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -4196,6 +4750,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &972140368
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4246,6 +4804,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &972140369
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972140365}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &975464652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4257,6 +4828,7 @@ GameObject:
   - component: {fileID: 975464653}
   - component: {fileID: 975464654}
   - component: {fileID: 975464655}
+  - component: {fileID: 975464656}
   m_Layer: 0
   m_Name: Grid 02-07
   m_TagString: Untagged
@@ -4294,9 +4866,9 @@ MonoBehaviour:
   EastCheck: {fileID: 136731964}
   SouthCheck: {fileID: 1664932949}
   WestCheck: {fileID: 2127889434}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -4304,6 +4876,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &975464655
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4354,6 +4930,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &975464656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975464652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1009707759
 GameObject:
   m_ObjectHideFlags: 0
@@ -4365,6 +4954,7 @@ GameObject:
   - component: {fileID: 1009707760}
   - component: {fileID: 1009707761}
   - component: {fileID: 1009707762}
+  - component: {fileID: 1009707763}
   m_Layer: 0
   m_Name: Grid 07-06
   m_TagString: Untagged
@@ -4402,9 +4992,9 @@ MonoBehaviour:
   EastCheck: {fileID: 350552431}
   SouthCheck: {fileID: 643770320}
   WestCheck: {fileID: 491697406}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -4412,6 +5002,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1009707762
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4462,6 +5056,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1009707763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009707759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1043859839
 GameObject:
   m_ObjectHideFlags: 0
@@ -4473,6 +5080,7 @@ GameObject:
   - component: {fileID: 1043859840}
   - component: {fileID: 1043859841}
   - component: {fileID: 1043859842}
+  - component: {fileID: 1043859843}
   m_Layer: 0
   m_Name: Grid 05-01
   m_TagString: Untagged
@@ -4510,9 +5118,9 @@ MonoBehaviour:
   EastCheck: {fileID: 296241449}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 1263871763}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -4520,6 +5128,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1043859842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4570,6 +5182,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1043859843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043859839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1054425646
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,7 +5259,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070036876
 GameObject:
@@ -4647,6 +5272,7 @@ GameObject:
   - component: {fileID: 1070036877}
   - component: {fileID: 1070036878}
   - component: {fileID: 1070036879}
+  - component: {fileID: 1070036880}
   m_Layer: 0
   m_Name: Grid 06-05
   m_TagString: Untagged
@@ -4684,9 +5310,9 @@ MonoBehaviour:
   EastCheck: {fileID: 643770320}
   SouthCheck: {fileID: 377470069}
   WestCheck: {fileID: 1701831311}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -4694,6 +5320,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1070036879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4744,6 +5374,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1070036880
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070036876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1082625177
 GameObject:
   m_ObjectHideFlags: 0
@@ -4755,6 +5398,7 @@ GameObject:
   - component: {fileID: 1082625180}
   - component: {fileID: 1082625179}
   - component: {fileID: 1082625178}
+  - component: {fileID: 1082625181}
   m_Layer: 0
   m_Name: Grid 01-02
   m_TagString: Untagged
@@ -4828,9 +5472,9 @@ MonoBehaviour:
   EastCheck: {fileID: 972140365}
   SouthCheck: {fileID: 446506980}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -4838,6 +5482,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!4 &1082625180
 Transform:
   m_ObjectHideFlags: 0
@@ -4852,6 +5500,19 @@ Transform:
   m_Father: {fileID: 550950082}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1082625181
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082625177}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1168514952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4863,6 +5524,7 @@ GameObject:
   - component: {fileID: 1168514953}
   - component: {fileID: 1168514954}
   - component: {fileID: 1168514955}
+  - component: {fileID: 1168514956}
   m_Layer: 0
   m_Name: Grid 04-02
   m_TagString: Untagged
@@ -4900,9 +5562,9 @@ MonoBehaviour:
   EastCheck: {fileID: 733068335}
   SouthCheck: {fileID: 1263871763}
   WestCheck: {fileID: 1284208831}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -4910,6 +5572,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1168514955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4960,6 +5626,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1168514956
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168514952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1177412743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4971,6 +5650,7 @@ GameObject:
   - component: {fileID: 1177412746}
   - component: {fileID: 1177412745}
   - component: {fileID: 1177412744}
+  - component: {fileID: 1177412747}
   m_Layer: 0
   m_Name: Grid 01-03
   m_TagString: Untagged
@@ -5044,9 +5724,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1627717876}
   SouthCheck: {fileID: 1082625177}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -5054,6 +5734,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!4 &1177412746
 Transform:
   m_ObjectHideFlags: 0
@@ -5068,6 +5752,19 @@ Transform:
   m_Father: {fileID: 550950082}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1177412747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177412743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1179540702
 GameObject:
   m_ObjectHideFlags: 0
@@ -5079,6 +5776,7 @@ GameObject:
   - component: {fileID: 1179540703}
   - component: {fileID: 1179540704}
   - component: {fileID: 1179540705}
+  - component: {fileID: 1179540706}
   m_Layer: 0
   m_Name: Grid 05-08
   m_TagString: Untagged
@@ -5116,9 +5814,9 @@ MonoBehaviour:
   EastCheck: {fileID: 79994033}
   SouthCheck: {fileID: 1427416104}
   WestCheck: {fileID: 1608915633}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -5126,6 +5824,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1179540705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5176,6 +5878,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1179540706
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179540702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1263871763
 GameObject:
   m_ObjectHideFlags: 0
@@ -5187,6 +5902,7 @@ GameObject:
   - component: {fileID: 1263871764}
   - component: {fileID: 1263871765}
   - component: {fileID: 1263871766}
+  - component: {fileID: 1263871767}
   m_Layer: 0
   m_Name: Grid 04-01
   m_TagString: Untagged
@@ -5224,9 +5940,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1043859839}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 594586529}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -5234,6 +5950,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1263871766
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5284,6 +6004,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1263871767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263871763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1268219085
 GameObject:
   m_ObjectHideFlags: 0
@@ -5295,6 +6028,7 @@ GameObject:
   - component: {fileID: 1268219086}
   - component: {fileID: 1268219087}
   - component: {fileID: 1268219088}
+  - component: {fileID: 1268219089}
   m_Layer: 0
   m_Name: Grid 07-04
   m_TagString: Untagged
@@ -5332,9 +6066,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1382573630}
   SouthCheck: {fileID: 183685984}
   WestCheck: {fileID: 377470069}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -5342,6 +6076,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1268219088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5392,6 +6130,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1268219089
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268219085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1284208831
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,6 +6154,7 @@ GameObject:
   - component: {fileID: 1284208832}
   - component: {fileID: 1284208833}
   - component: {fileID: 1284208834}
+  - component: {fileID: 1284208835}
   m_Layer: 0
   m_Name: Grid 03-02
   m_TagString: Untagged
@@ -5440,9 +6192,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1168514952}
   SouthCheck: {fileID: 594586529}
   WestCheck: {fileID: 972140365}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -5450,6 +6202,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1284208834
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5500,6 +6256,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1284208835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284208831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1309469976
 GameObject:
   m_ObjectHideFlags: 0
@@ -5511,6 +6280,7 @@ GameObject:
   - component: {fileID: 1309469977}
   - component: {fileID: 1309469978}
   - component: {fileID: 1309469979}
+  - component: {fileID: 1309469980}
   m_Layer: 0
   m_Name: Grid 04-06
   m_TagString: Untagged
@@ -5548,9 +6318,9 @@ MonoBehaviour:
   EastCheck: {fileID: 555635173}
   SouthCheck: {fileID: 1457195738}
   WestCheck: {fileID: 92294629}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -5558,6 +6328,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1309469979
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5608,6 +6382,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1309469980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309469976}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1382573630
 GameObject:
   m_ObjectHideFlags: 0
@@ -5619,6 +6406,7 @@ GameObject:
   - component: {fileID: 1382573631}
   - component: {fileID: 1382573632}
   - component: {fileID: 1382573633}
+  - component: {fileID: 1382573634}
   m_Layer: 0
   m_Name: Grid 08-04
   m_TagString: Untagged
@@ -5656,9 +6444,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 1419694447}
   WestCheck: {fileID: 1268219085}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -5666,6 +6454,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1382573633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5716,6 +6508,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1382573634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382573630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1419694447
 GameObject:
   m_ObjectHideFlags: 0
@@ -5727,6 +6532,7 @@ GameObject:
   - component: {fileID: 1419694448}
   - component: {fileID: 1419694449}
   - component: {fileID: 1419694450}
+  - component: {fileID: 1419694451}
   m_Layer: 0
   m_Name: Grid 08-03
   m_TagString: Untagged
@@ -5764,9 +6570,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 2083672192}
   WestCheck: {fileID: 183685984}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -5774,6 +6580,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1419694450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5824,6 +6634,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1419694451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419694447}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1427416104
 GameObject:
   m_ObjectHideFlags: 0
@@ -5835,6 +6658,7 @@ GameObject:
   - component: {fileID: 1427416105}
   - component: {fileID: 1427416106}
   - component: {fileID: 1427416107}
+  - component: {fileID: 1427416108}
   m_Layer: 0
   m_Name: Grid 05-07
   m_TagString: Untagged
@@ -5872,9 +6696,9 @@ MonoBehaviour:
   EastCheck: {fileID: 901168811}
   SouthCheck: {fileID: 555635173}
   WestCheck: {fileID: 1555466542}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -5882,6 +6706,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1427416107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5932,6 +6760,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1427416108
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427416104}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1455922364
 GameObject:
   m_ObjectHideFlags: 0
@@ -5943,6 +6784,7 @@ GameObject:
   - component: {fileID: 1455922365}
   - component: {fileID: 1455922366}
   - component: {fileID: 1455922367}
+  - component: {fileID: 1455922368}
   m_Layer: 0
   m_Name: Grid 07-02
   m_TagString: Untagged
@@ -5980,9 +6822,9 @@ MonoBehaviour:
   EastCheck: {fileID: 2083672192}
   SouthCheck: {fileID: 2142699134}
   WestCheck: {fileID: 1849895563}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -5990,6 +6832,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1455922367
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6040,6 +6886,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1455922368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455922364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1457195738
 GameObject:
   m_ObjectHideFlags: 0
@@ -6051,6 +6910,7 @@ GameObject:
   - component: {fileID: 1457195739}
   - component: {fileID: 1457195740}
   - component: {fileID: 1457195741}
+  - component: {fileID: 1457195742}
   m_Layer: 0
   m_Name: Grid 04-05
   m_TagString: Untagged
@@ -6088,9 +6948,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1701831311}
   SouthCheck: {fileID: 1554319320}
   WestCheck: {fileID: 434941512}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -6098,6 +6958,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1457195741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6148,6 +7012,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1457195742
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457195738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1470366088
 GameObject:
   m_ObjectHideFlags: 0
@@ -6157,6 +7034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1470366089}
+  - component: {fileID: 1470366090}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -6171,13 +7049,30 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470366088}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: -0.40821788, y: 0.23456968, z: -0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 21.608334, y: -1.2804141, z: 1.5364189}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 705507995}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1470366090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470366088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e2b694b6d7683742973644968ab4114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameOver: {fileID: 4058569}
+  NextLevel: {fileID: 2136870493}
+  isInputEnabled: 0
+  roundTrack: 0
+  roundTrackMax: 60
 --- !u!1 &1554319320
 GameObject:
   m_ObjectHideFlags: 0
@@ -6189,6 +7084,7 @@ GameObject:
   - component: {fileID: 1554319321}
   - component: {fileID: 1554319322}
   - component: {fileID: 1554319323}
+  - component: {fileID: 1554319324}
   m_Layer: 0
   m_Name: Grid 04-04
   m_TagString: Untagged
@@ -6226,9 +7122,9 @@ MonoBehaviour:
   EastCheck: {fileID: 823221820}
   SouthCheck: {fileID: 111018902}
   WestCheck: {fileID: 515778800}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -6236,6 +7132,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1554319323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6286,6 +7186,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1554319324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554319320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1555466542
 GameObject:
   m_ObjectHideFlags: 0
@@ -6297,6 +7210,7 @@ GameObject:
   - component: {fileID: 1555466543}
   - component: {fileID: 1555466544}
   - component: {fileID: 1555466545}
+  - component: {fileID: 1555466546}
   m_Layer: 0
   m_Name: Grid 04-07
   m_TagString: Untagged
@@ -6334,9 +7248,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1427416104}
   SouthCheck: {fileID: 1309469976}
   WestCheck: {fileID: 136731964}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -6344,6 +7258,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1555466545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6394,6 +7312,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1555466546
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555466542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1563685192
 GameObject:
   m_ObjectHideFlags: 0
@@ -6405,6 +7336,7 @@ GameObject:
   - component: {fileID: 1563685193}
   - component: {fileID: 1563685194}
   - component: {fileID: 1563685195}
+  - component: {fileID: 1563685196}
   m_Layer: 0
   m_Name: Grid 08-01
   m_TagString: Untagged
@@ -6442,9 +7374,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 2142699134}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -6452,6 +7384,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1563685195
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6502,6 +7438,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1563685196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563685192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1597056416
 GameObject:
   m_ObjectHideFlags: 0
@@ -6513,6 +7462,7 @@ GameObject:
   - component: {fileID: 1597056417}
   - component: {fileID: 1597056418}
   - component: {fileID: 1597056419}
+  - component: {fileID: 1597056420}
   m_Layer: 0
   m_Name: Grid 03-08
   m_TagString: Untagged
@@ -6550,9 +7500,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1608915633}
   SouthCheck: {fileID: 136731964}
   WestCheck: {fileID: 2115141712}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -6560,6 +7510,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1597056419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6610,6 +7564,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1597056420
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597056416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1608915633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6621,6 +7588,7 @@ GameObject:
   - component: {fileID: 1608915634}
   - component: {fileID: 1608915635}
   - component: {fileID: 1608915636}
+  - component: {fileID: 1608915637}
   m_Layer: 0
   m_Name: 'Grid 04-08 '
   m_TagString: Untagged
@@ -6658,9 +7626,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1179540702}
   SouthCheck: {fileID: 1555466542}
   WestCheck: {fileID: 1597056416}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -6668,6 +7636,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1608915636
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6718,6 +7690,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1608915637
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608915633}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1627717876
 GameObject:
   m_ObjectHideFlags: 0
@@ -6729,6 +7714,7 @@ GameObject:
   - component: {fileID: 1627717877}
   - component: {fileID: 1627717878}
   - component: {fileID: 1627717879}
+  - component: {fileID: 1627717880}
   m_Layer: 0
   m_Name: Grid 02-03
   m_TagString: Untagged
@@ -6766,9 +7752,9 @@ MonoBehaviour:
   EastCheck: {fileID: 267227458}
   SouthCheck: {fileID: 972140365}
   WestCheck: {fileID: 1177412743}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -6776,6 +7762,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1627717879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6826,6 +7816,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1627717880
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627717876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1664932949
 GameObject:
   m_ObjectHideFlags: 0
@@ -6837,6 +7840,7 @@ GameObject:
   - component: {fileID: 1664932950}
   - component: {fileID: 1664932951}
   - component: {fileID: 1664932952}
+  - component: {fileID: 1664932953}
   m_Layer: 0
   m_Name: Grid 02-06
   m_TagString: Untagged
@@ -6874,16 +7878,20 @@ MonoBehaviour:
   EastCheck: {fileID: 92294629}
   SouthCheck: {fileID: 430015003}
   WestCheck: {fileID: 815724593}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 0
+  isNorthReady: 1
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1664932952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6934,6 +7942,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1664932953
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664932949}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1701831311
 GameObject:
   m_ObjectHideFlags: 0
@@ -6945,6 +7966,7 @@ GameObject:
   - component: {fileID: 1701831312}
   - component: {fileID: 1701831313}
   - component: {fileID: 1701831314}
+  - component: {fileID: 1701831315}
   m_Layer: 0
   m_Name: Grid 05-05
   m_TagString: Untagged
@@ -6982,9 +8004,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1457195738}
   SouthCheck: {fileID: 823221820}
   WestCheck: {fileID: 1457195738}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -6992,6 +8014,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1701831314
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7042,6 +8068,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1701831315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701831311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1792679683
 GameObject:
   m_ObjectHideFlags: 0
@@ -7053,6 +8092,7 @@ GameObject:
   - component: {fileID: 1792679684}
   - component: {fileID: 1792679686}
   - component: {fileID: 1792679685}
+  - component: {fileID: 1792679687}
   m_Layer: 0
   m_Name: Grid 01-08
   m_TagString: Untagged
@@ -7140,9 +8180,9 @@ MonoBehaviour:
   EastCheck: {fileID: 2115141712}
   SouthCheck: {fileID: 2127889434}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -7150,6 +8190,70 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
+--- !u!65 &1792679687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792679683}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1820547305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1820547307}
+  - component: {fileID: 1820547306}
+  m_Layer: 0
+  m_Name: StatuePlacer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1820547306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820547305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84c17dbb1de8f34f84e01a475357081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  compassCheckREF: {fileID: 0}
+  trueCheck: 1
+  statueTrans: {fileID: 913353369}
+  statueGameOb: {fileID: 913353368}
+--- !u!4 &1820547307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820547305}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.59543467, y: 0.7617896, z: -16.43595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849895563
 GameObject:
   m_ObjectHideFlags: 0
@@ -7161,6 +8265,7 @@ GameObject:
   - component: {fileID: 1849895564}
   - component: {fileID: 1849895565}
   - component: {fileID: 1849895566}
+  - component: {fileID: 1849895567}
   m_Layer: 0
   m_Name: Grid 06-02
   m_TagString: Untagged
@@ -7198,16 +8303,20 @@ MonoBehaviour:
   EastCheck: {fileID: 1455922364}
   SouthCheck: {fileID: 296241449}
   WestCheck: {fileID: 733068335}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
-  isWestReady: 0
+  isWestReady: 1
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1849895566
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7258,6 +8367,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1849895567
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849895563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1863422914
 GameObject:
   m_ObjectHideFlags: 0
@@ -7269,6 +8391,7 @@ GameObject:
   - component: {fileID: 1863422915}
   - component: {fileID: 1863422916}
   - component: {fileID: 1863422917}
+  - component: {fileID: 1863422918}
   m_Layer: 0
   m_Name: Grid 05-03
   m_TagString: Untagged
@@ -7306,9 +8429,9 @@ MonoBehaviour:
   EastCheck: {fileID: 196354868}
   SouthCheck: {fileID: 733068335}
   WestCheck: {fileID: 111018902}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -7316,6 +8439,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &1863422917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7366,6 +8493,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1863422918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863422914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1923745011
 GameObject:
   m_ObjectHideFlags: 0
@@ -7377,6 +8517,7 @@ GameObject:
   - component: {fileID: 1923745014}
   - component: {fileID: 1923745013}
   - component: {fileID: 1923745012}
+  - component: {fileID: 1923745015}
   m_Layer: 0
   m_Name: Grid 01-05
   m_TagString: Untagged
@@ -7450,9 +8591,9 @@ MonoBehaviour:
   EastCheck: {fileID: 430015003}
   SouthCheck: {fileID: 158055848}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -7460,6 +8601,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!4 &1923745014
 Transform:
   m_ObjectHideFlags: 0
@@ -7474,6 +8619,19 @@ Transform:
   m_Father: {fileID: 550950082}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1923745015
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923745011}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1951123514
 GameObject:
   m_ObjectHideFlags: 0
@@ -7572,9 +8730,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 0}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -7582,6 +8740,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!1 &2083672192
 GameObject:
   m_ObjectHideFlags: 0
@@ -7593,6 +8755,7 @@ GameObject:
   - component: {fileID: 2083672193}
   - component: {fileID: 2083672194}
   - component: {fileID: 2083672195}
+  - component: {fileID: 2083672196}
   m_Layer: 0
   m_Name: Grid 08-02
   m_TagString: Untagged
@@ -7630,9 +8793,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1951123514}
   SouthCheck: {fileID: 1563685192}
   WestCheck: {fileID: 1455922364}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -7640,6 +8803,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &2083672195
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7690,6 +8857,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2083672196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083672192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2115141712
 GameObject:
   m_ObjectHideFlags: 0
@@ -7701,6 +8881,7 @@ GameObject:
   - component: {fileID: 2115141713}
   - component: {fileID: 2115141714}
   - component: {fileID: 2115141715}
+  - component: {fileID: 2115141716}
   m_Layer: 0
   m_Name: Grid 02-08
   m_TagString: Untagged
@@ -7738,9 +8919,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1597056416}
   SouthCheck: {fileID: 975464652}
   WestCheck: {fileID: 1792679683}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -7748,6 +8929,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &2115141715
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7798,6 +8983,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2115141716
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115141712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2127889434
 GameObject:
   m_ObjectHideFlags: 0
@@ -7809,6 +9007,7 @@ GameObject:
   - component: {fileID: 2127889437}
   - component: {fileID: 2127889436}
   - component: {fileID: 2127889435}
+  - component: {fileID: 2127889438}
   m_Layer: 0
   m_Name: Grid 01-07
   m_TagString: Untagged
@@ -7882,9 +9081,9 @@ MonoBehaviour:
   EastCheck: {fileID: 975464652}
   SouthCheck: {fileID: 815724593}
   WestCheck: {fileID: 410732966}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -7892,6 +9091,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!4 &2127889437
 Transform:
   m_ObjectHideFlags: 0
@@ -7906,6 +9109,19 @@ Transform:
   m_Father: {fileID: 550950082}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2127889438
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127889434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2136870493
 GameObject:
   m_ObjectHideFlags: 0
@@ -7997,6 +9213,7 @@ GameObject:
   - component: {fileID: 2142699135}
   - component: {fileID: 2142699136}
   - component: {fileID: 2142699137}
+  - component: {fileID: 2142699138}
   m_Layer: 0
   m_Name: Grid 07-01
   m_TagString: Untagged
@@ -8034,9 +9251,9 @@ MonoBehaviour:
   EastCheck: {fileID: 1563685192}
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 296241449}
-  GameOver: {fileID: 4058569}
-  NextLevel: {fileID: 2136870493}
-  roundTrack: 0
+  thisStatue: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
+  hitName: 
   isClear: 1
   isWet: 0
   isNorthReady: 0
@@ -8044,6 +9261,10 @@ MonoBehaviour:
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
+  isStatue: 0
+  falseCheck: 0
+  catIsWet: 0
+  statueExist: 0
 --- !u!212 &2142699137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8094,3 +9315,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2142699138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142699134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
