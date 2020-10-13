@@ -53,7 +53,7 @@ public class compassCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp("space") && catIsWet == false)
+        if (Input.GetKeyUp("space") && catIsWet == false && statueExist == true)
         {
             checkCompass();
         }

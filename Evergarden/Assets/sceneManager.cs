@@ -8,6 +8,7 @@ public class sceneManager : MonoBehaviour
 {
     public GameObject GameOver;
     public GameObject NextLevel;
+    public GameObject NextLevelButton;
     public bool isInputEnabled;
     public int roundTrack;
     public int roundTrackMax;
@@ -22,6 +23,7 @@ public class sceneManager : MonoBehaviour
     {
         GameOver.SetActive(false);
         NextLevel.SetActive(false);
+        NextLevelButton.SetActive(false);
         isInputEnabled = true;
     }
 
@@ -42,17 +44,18 @@ public class sceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-  //      if (Input.GetMouseButtonDown(0))
-		//{
-  //          StartCoroutine(checkCompassRepeat());
-		//}
+        if (Input.GetMouseButtonDown(0))
+		{
+            StartCoroutine(checkCompassRepeat());
+		}
 
-  //          if (roundTrack == roundTrackMax)
-  //      {
-  //          NextLevel.SetActive(true);
-  //          isInputEnabled = false;
-  //      }
-        if (Input.GetKeyUp("space") && isInputEnabled == true)
+          if (roundTrack == roundTrackMax)
+     {
+          NextLevel.SetActive(true);
+          NextLevelButton.SetActive(true);
+          isInputEnabled = false;
+        }
+        if (Input.GetKeyUp("space") && isInputEnabled == true && compassCheckREF.statueExist == true)
         {
             roundTrack++;
             pressSpace.enabled = false;
