@@ -264,6 +264,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &79994036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -390,6 +392,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &92294632
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -516,6 +520,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &111018905
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -642,6 +648,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &136731967
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -804,6 +812,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!4 &158055851
 Transform:
   m_ObjectHideFlags: 0
@@ -894,6 +904,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &180143122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1020,6 +1032,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &183685987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1146,6 +1160,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &189359918
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1272,6 +1288,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &196354871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1398,6 +1416,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &267227461
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1554,7 +1574,7 @@ RectTransform:
   - {fileID: 4058570}
   - {fileID: 2136870494}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1624,6 +1644,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &296241452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1750,6 +1772,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &350552434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1876,6 +1900,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &353198742
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2002,6 +2028,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &377470072
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2164,7 +2192,7 @@ MonoBehaviour:
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 410732966}
   thisStatue: {fileID: 0}
-  sceneManagerREF: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
   hitName: 
   isClear: 1
   isWet: 0
@@ -2177,6 +2205,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 0}
+  one: 1
 --- !u!1 &430015003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2240,6 +2270,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &430015006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2366,6 +2398,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &434941515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2528,6 +2562,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!4 &446506983
 Transform:
   m_ObjectHideFlags: 0
@@ -2618,6 +2654,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &491697409
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2744,6 +2782,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &496464562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2870,6 +2910,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &515778803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3029,7 +3071,7 @@ Transform:
   - {fileID: 1951123515}
   - {fileID: 705406504}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555635173
 GameObject:
@@ -3094,6 +3136,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &555635176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3220,6 +3264,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &594586532
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3346,6 +3392,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &602580435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3472,6 +3520,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &643770323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3634,7 +3684,7 @@ MonoBehaviour:
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 410732966}
   thisStatue: {fileID: 0}
-  sceneManagerREF: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
   hitName: 
   isClear: 1
   isWet: 0
@@ -3647,6 +3697,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 0}
+  one: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3735,10 +3787,9 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: -18.71, y: 3, z: -10.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1470366089}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &733068335
 GameObject:
@@ -3803,6 +3854,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &733068338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3965,6 +4018,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!4 &815724596
 Transform:
   m_ObjectHideFlags: 0
@@ -4055,6 +4110,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &823221823
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4181,6 +4238,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &834426678
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4307,6 +4366,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &901168814
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4469,7 +4530,7 @@ MonoBehaviour:
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 410732966}
   thisStatue: {fileID: 0}
-  sceneManagerREF: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
   hitName: 
   isClear: 1
   isWet: 0
@@ -4482,6 +4543,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 0}
+  one: 1
 --- !u!1 &927672728
 GameObject:
   m_ObjectHideFlags: 0
@@ -4545,6 +4608,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &927672731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4754,6 +4819,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &972140368
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4880,6 +4947,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &975464655
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5006,6 +5075,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1009707762
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5046,7 +5117,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5132,6 +5203,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1043859842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5259,7 +5332,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070036876
 GameObject:
@@ -5324,6 +5397,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1070036879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5486,6 +5561,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!4 &1082625180
 Transform:
   m_ObjectHideFlags: 0
@@ -5576,6 +5653,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1168514955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5738,6 +5817,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!4 &1177412746
 Transform:
   m_ObjectHideFlags: 0
@@ -5828,6 +5909,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1179540705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5954,6 +6037,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1263871766
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6080,6 +6165,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1268219088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6206,6 +6293,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1284208834
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6332,6 +6421,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1309469979
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6458,6 +6549,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1382573633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6584,6 +6677,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1419694450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6710,6 +6805,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1427416107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6836,6 +6933,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1455922367
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6962,6 +7061,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1457195741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7049,12 +7150,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470366088}
-  m_LocalRotation: {x: -0.40821788, y: 0.23456968, z: -0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 21.608334, y: -1.2804141, z: 1.5364189}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 705507995}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1470366090
 MonoBehaviour:
@@ -7073,6 +7174,72 @@ MonoBehaviour:
   isInputEnabled: 0
   roundTrack: 0
   roundTrackMax: 60
+  compassCheckREF: {fileID: 446506982}
+  myList:
+  - {fileID: 446506980}
+  - {fileID: 1082625177}
+  - {fileID: 1177412743}
+  - {fileID: 158055848}
+  - {fileID: 1923745011}
+  - {fileID: 815724593}
+  - {fileID: 2127889434}
+  - {fileID: 1792679683}
+  - {fileID: 189359915}
+  - {fileID: 972140365}
+  - {fileID: 1627717876}
+  - {fileID: 602580432}
+  - {fileID: 430015003}
+  - {fileID: 1664932949}
+  - {fileID: 975464652}
+  - {fileID: 2115141712}
+  - {fileID: 594586529}
+  - {fileID: 1284208831}
+  - {fileID: 267227458}
+  - {fileID: 515778800}
+  - {fileID: 434941512}
+  - {fileID: 92294629}
+  - {fileID: 136731964}
+  - {fileID: 1597056416}
+  - {fileID: 1263871763}
+  - {fileID: 1168514952}
+  - {fileID: 111018902}
+  - {fileID: 1554319320}
+  - {fileID: 1457195738}
+  - {fileID: 1309469976}
+  - {fileID: 1555466542}
+  - {fileID: 1608915633}
+  - {fileID: 1043859839}
+  - {fileID: 733068335}
+  - {fileID: 1863422914}
+  - {fileID: 823221820}
+  - {fileID: 1701831311}
+  - {fileID: 555635173}
+  - {fileID: 1427416104}
+  - {fileID: 1179540702}
+  - {fileID: 296241449}
+  - {fileID: 1849895563}
+  - {fileID: 196354868}
+  - {fileID: 377470069}
+  - {fileID: 1070036876}
+  - {fileID: 491697406}
+  - {fileID: 901168811}
+  - {fileID: 79994033}
+  - {fileID: 2142699134}
+  - {fileID: 1455922364}
+  - {fileID: 183685984}
+  - {fileID: 1268219085}
+  - {fileID: 643770320}
+  - {fileID: 1009707759}
+  - {fileID: 353198739}
+  - {fileID: 180143119}
+  - {fileID: 1563685192}
+  - {fileID: 2083672192}
+  - {fileID: 1419694447}
+  - {fileID: 1382573630}
+  - {fileID: 927672728}
+  - {fileID: 350552431}
+  - {fileID: 496464559}
+  - {fileID: 834426675}
 --- !u!1 &1554319320
 GameObject:
   m_ObjectHideFlags: 0
@@ -7136,6 +7303,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1554319323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7262,6 +7431,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1555466545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7388,6 +7559,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1563685195
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7514,6 +7687,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1597056419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7640,6 +7815,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1608915636
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7766,6 +7943,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1627717879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7892,6 +8071,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1664932952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8018,6 +8199,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1701831314
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8194,6 +8377,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!65 &1792679687
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8252,7 +8437,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849895563
 GameObject:
@@ -8317,6 +8502,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1849895566
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8443,6 +8630,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &1863422917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8605,6 +8794,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!4 &1923745014
 Transform:
   m_ObjectHideFlags: 0
@@ -8731,7 +8922,7 @@ MonoBehaviour:
   SouthCheck: {fileID: 705406503}
   WestCheck: {fileID: 410732966}
   thisStatue: {fileID: 0}
-  sceneManagerREF: {fileID: 0}
+  sceneManagerREF: {fileID: 1470366090}
   hitName: 
   isClear: 1
   isWet: 0
@@ -8744,6 +8935,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 0}
+  one: 1
 --- !u!1 &2083672192
 GameObject:
   m_ObjectHideFlags: 0
@@ -8807,6 +9000,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &2083672195
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8933,6 +9128,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &2115141715
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9095,6 +9292,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!4 &2127889437
 Transform:
   m_ObjectHideFlags: 0
@@ -9265,6 +9464,8 @@ MonoBehaviour:
   falseCheck: 0
   catIsWet: 0
   statueExist: 0
+  cat: {fileID: 21300000, guid: 91df5a0f5e4140442be1d00b9889aebd, type: 3}
+  one: 1
 --- !u!212 &2142699137
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -23,7 +23,8 @@ public class compassCheck : MonoBehaviour
     public bool falseCheck = false;
     public bool catIsWet = false;
     public bool statueExist = false;
-
+    public Sprite cat;
+    public int one = 1;
 
    /* public Color Blue;
     public Color Purple;
@@ -37,10 +38,12 @@ public class compassCheck : MonoBehaviour
     void Start()
     {
         //        ParentScript = this.transform.parent.GameObject.GetComponent<ScriptName>();
-  
+
         if (isCat == true)
             {
-                this.GetComponent<SpriteRenderer>().material.color = Color.black;
+                this.GetComponent<SpriteRenderer>().material.color = Color.Lerp(Color.yellow, Color.red, .5f);
+
+            this.GetComponent<SpriteRenderer>().sprite = cat;
             }
         checkCompass();
     }
@@ -50,37 +53,35 @@ public class compassCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp("z") && catIsWet == false)
+        if (Input.GetKeyUp("space") && catIsWet == false)
         {
             checkCompass();
         }
         checkReady();
-        if (statueExist == false) { 
-            if (Input.GetMouseButtonDown(0))
+        if (statueExist == false)
         {
-            Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100f));
-            Vector3 direction = worldMousePosition - Camera.main.transform.position;
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, 100.0f))
+            if (Input.GetMouseButtonDown(0))
             {
-                    hit.transform.GetComponent<SpriteRenderer>().material.color = Color.gray;
-                
-                Debug.Log("You selected the " + hit.transform.name);
-                hitName = hit.transform.name;
-
-            //        SetStatue();
-                GetGameObject();
-                // statueGameOb.GetComponent<compassCheck>(SetStatue());
-            }
+                 Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100f));
+                 Vector3 direction = worldMousePosition - Camera.main.transform.position;
+                 RaycastHit hit;
+                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hit, 100.0f))
+                {
+                    Debug.Log("You selected the " + hit.transform.name);
+                    hitName = hit.transform.name;
+                    GetGameObject();
+                }
             }
         }
 
+
+
     }
- //   ParentScript.ScriptFunction();
+    //   ParentScript.ScriptFunction();
 
 
-    void checkCompass()
+    public void checkCompass()
     {
         if (isCat == false)
         {
@@ -158,13 +159,16 @@ public class compassCheck : MonoBehaviour
             Debug.Log("Ping");
         }
     }
+
+
+
     void checkReady()
-    {    
-        if(isClear == true) 
-        {    
+    {
+        if(isClear == true)
+        {
             if (NorthCheck.GetComponent<SpriteRenderer>().material.color == Color.blue || EastCheck.GetComponent<SpriteRenderer>().material.color == Color.blue || SouthCheck.GetComponent<SpriteRenderer>().material.color == Color.blue || WestCheck.GetComponent<SpriteRenderer>().material.color == Color.blue)
                 {
-                    isWet = true; 
+                    isWet = true;
                 }
             else if(NorthCheck.GetComponent<SpriteRenderer>().material.color == Color.white)
             {
@@ -189,12 +193,30 @@ public class compassCheck : MonoBehaviour
     {
         if(statueExist == false)
         {
+
+
             thisStatue = GameObject.Find(hitName);
-            thisStatue.GetComponent<compassCheck>().isStatue = true;
-            thisStatue.GetComponent<compassCheck>().isClear = false;
-            statueExist = true;
+
+            if (thisStatue.GetComponent<compassCheck>().isClear == true)
+            {
+
+
+                thisStatue.GetComponent<compassCheck>().isStatue = true;
+                //thisStatue.GetComponent<compassCheck>().isClear = false;
+                thisStatue.GetComponent<SpriteRenderer>().material.color = Color.gray;
+                statueExist = true;
+                StartCoroutine(checkCompassRepeat());
+            }
         }
 
+
+    }
+
+    public IEnumerator checkCompassRepeat()
+    {
+
+           yield return new WaitForSecondsRealtime(1f);
+        thisStatue.GetComponent<compassCheck>().isClear = false;
 
     }
 }
