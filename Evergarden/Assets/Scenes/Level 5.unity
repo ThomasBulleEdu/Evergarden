@@ -257,7 +257,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 0
+  isSouthReady: 1
   isWestReady: 0
   isCat: 0
   isStatue: 0
@@ -513,7 +513,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 0
+  isSouthReady: 1
   isWestReady: 0
   isCat: 0
   isStatue: 0
@@ -948,7 +948,7 @@ MonoBehaviour:
   isClear: 1
   isWet: 0
   isNorthReady: 0
-  isEastReady: 1
+  isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
@@ -1423,7 +1423,7 @@ MonoBehaviour:
   hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 1
+  isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
@@ -1550,7 +1550,7 @@ MonoBehaviour:
   sceneManagerREF: {fileID: 1470366090}
   hitName: 
   isClear: 1
-  isWet: 1
+  isWet: 0
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
@@ -2786,13 +2786,13 @@ MonoBehaviour:
   thisStatue: {fileID: 0}
   sceneManagerREF: {fileID: 1470366090}
   hitName: 
-  isClear: 0
+  isClear: 1
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
-  isCat: 1
+  isCat: 0
   isStatue: 0
   falseCheck: 0
   catIsWet: 0
@@ -2919,7 +2919,7 @@ MonoBehaviour:
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
-  isWestReady: 1
+  isWestReady: 0
   isCat: 0
   isStatue: 0
   falseCheck: 0
@@ -3270,7 +3270,7 @@ MonoBehaviour:
   hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 0
+  isNorthReady: 1
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
@@ -4153,7 +4153,7 @@ MonoBehaviour:
   isClear: 1
   isWet: 0
   isNorthReady: 0
-  isEastReady: 1
+  isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
@@ -4371,7 +4371,7 @@ MonoBehaviour:
   sceneManagerREF: {fileID: 1470366090}
   hitName: 
   isClear: 1
-  isWet: 0
+  isWet: 1
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
@@ -4745,7 +4745,7 @@ MonoBehaviour:
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
-  isWestReady: 1
+  isWestReady: 0
   isCat: 0
   isStatue: 0
   falseCheck: 0
@@ -5612,7 +5612,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 1
+  isSouthReady: 0
   isWestReady: 0
   isCat: 0
   isStatue: 0
@@ -6250,7 +6250,7 @@ MonoBehaviour:
   hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 1
+  isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
@@ -6506,7 +6506,7 @@ MonoBehaviour:
   hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 1
+  isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
@@ -6634,7 +6634,7 @@ MonoBehaviour:
   hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 0
+  isNorthReady: 1
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
@@ -6777,7 +6777,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Click Any Green Square To Place Your Wall
+  m_Text: 
 --- !u!222 &1371215045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6843,7 +6843,7 @@ MonoBehaviour:
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
-  isWestReady: 0
+  isWestReady: 1
   isCat: 0
   isStatue: 0
   falseCheck: 0
@@ -7852,7 +7852,7 @@ MonoBehaviour:
   sceneManagerREF: {fileID: 1470366090}
   hitName: 
   isClear: 1
-  isWet: 0
+  isWet: 1
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
@@ -7996,7 +7996,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press Spacebar To Play
+  m_Text: 
 --- !u!222 &1569064923
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8061,7 +8061,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 1
+  isSouthReady: 0
   isWestReady: 0
   isCat: 0
   isStatue: 0
@@ -8575,7 +8575,7 @@ MonoBehaviour:
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
-  isCat: 0
+  isCat: 1
   isStatue: 0
   falseCheck: 0
   catIsWet: 0
@@ -8748,7 +8748,7 @@ MonoBehaviour:
   sceneManagerREF: {fileID: 1470366090}
   hitName: 
   isClear: 1
-  isWet: 0
+  isWet: 1
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
@@ -9004,7 +9004,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 0
+  isSouthReady: 1
   isWestReady: 0
   isCat: 0
   isStatue: 0

@@ -948,7 +948,7 @@ MonoBehaviour:
   isClear: 1
   isWet: 0
   isNorthReady: 0
-  isEastReady: 1
+  isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 0
+  isNorthReady: 1
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
@@ -1423,7 +1423,7 @@ MonoBehaviour:
   hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 1
+  isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
@@ -1550,7 +1550,7 @@ MonoBehaviour:
   sceneManagerREF: {fileID: 1470366090}
   hitName: 
   isClear: 1
-  isWet: 1
+  isWet: 0
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
@@ -2700,7 +2700,7 @@ MonoBehaviour:
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
-  isCat: 0
+  isCat: 1
   isStatue: 0
   falseCheck: 0
   catIsWet: 0
@@ -2786,13 +2786,13 @@ MonoBehaviour:
   thisStatue: {fileID: 0}
   sceneManagerREF: {fileID: 1470366090}
   hitName: 
-  isClear: 0
+  isClear: 1
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
-  isCat: 1
+  isCat: 0
   isStatue: 0
   falseCheck: 0
   catIsWet: 0
@@ -2919,7 +2919,7 @@ MonoBehaviour:
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
-  isWestReady: 1
+  isWestReady: 0
   isCat: 0
   isStatue: 0
   falseCheck: 0
@@ -4153,7 +4153,7 @@ MonoBehaviour:
   isClear: 1
   isWet: 0
   isNorthReady: 0
-  isEastReady: 1
+  isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
@@ -4741,11 +4741,11 @@ MonoBehaviour:
   sceneManagerREF: {fileID: 1470366090}
   hitName: 
   isClear: 1
-  isWet: 0
+  isWet: 1
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
-  isWestReady: 1
+  isWestReady: 0
   isCat: 0
   isStatue: 0
   falseCheck: 0
@@ -5034,7 +5034,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 0
+  isSouthReady: 1
   isWestReady: 0
   isCat: 0
   isStatue: 0
@@ -5288,7 +5288,7 @@ MonoBehaviour:
   hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 0
+  isNorthReady: 1
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
@@ -5612,7 +5612,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 1
+  isSouthReady: 0
   isWestReady: 0
   isCat: 0
   isStatue: 0
@@ -6049,7 +6049,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177412743}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 3, z: 0}
+  m_LocalPosition: {x: 1.01, y: 3, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 550950082}
@@ -6124,7 +6124,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 0
+  isSouthReady: 1
   isWestReady: 0
   isCat: 0
   isStatue: 0
@@ -6250,8 +6250,8 @@ MonoBehaviour:
   hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 1
-  isEastReady: 0
+  isNorthReady: 0
+  isEastReady: 1
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
@@ -6506,7 +6506,7 @@ MonoBehaviour:
   hitName: 
   isClear: 1
   isWet: 0
-  isNorthReady: 1
+  isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
   isWestReady: 0
@@ -6777,7 +6777,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Click Any Green Square To Place Your Wall
+  m_Text: 
 --- !u!222 &1371215045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7856,7 +7856,7 @@ MonoBehaviour:
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
-  isWestReady: 0
+  isWestReady: 1
   isCat: 0
   isStatue: 0
   falseCheck: 0
@@ -7996,7 +7996,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press Spacebar To Play
+  m_Text: 
 --- !u!222 &1569064923
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8061,7 +8061,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 1
+  isSouthReady: 0
   isWestReady: 0
   isCat: 0
   isStatue: 0
@@ -8751,7 +8751,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 0
+  isSouthReady: 1
   isWestReady: 0
   isCat: 0
   isStatue: 0
@@ -9167,7 +9167,7 @@ MonoBehaviour:
   isClear: 1
   isWet: 0
   isNorthReady: 0
-  isEastReady: 0
+  isEastReady: 1
   isSouthReady: 0
   isWestReady: 0
   isCat: 0
@@ -9453,7 +9453,7 @@ MonoBehaviour:
   isNorthReady: 0
   isEastReady: 0
   isSouthReady: 0
-  isWestReady: 0
+  isWestReady: 1
   isCat: 0
   isStatue: 0
   falseCheck: 0

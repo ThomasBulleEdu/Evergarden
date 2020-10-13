@@ -49,11 +49,14 @@ public class sceneManager : MonoBehaviour
         //          StartCoroutine(checkCompassRepeat());
         //}
 
-        //          if (roundTrack == roundTrackMax)
-        //      {
-        //          NextLevel.SetActive(true);
-        //          isInputEnabled = false;
-        //      }
+                  if (roundTrack == roundTrackMax)
+              {
+                  NextLevel.SetActive(true);
+                  isInputEnabled = false;
+            NextLevelButton.SetActive(true);
+
+
+        }
         if (Input.GetKeyUp("space") && isInputEnabled == true && compassCheckREF.statueExist == true)
         {
             roundTrack++;
