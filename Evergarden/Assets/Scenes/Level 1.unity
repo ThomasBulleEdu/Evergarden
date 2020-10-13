@@ -5612,7 +5612,7 @@ MonoBehaviour:
   isWet: 0
   isNorthReady: 0
   isEastReady: 0
-  isSouthReady: 1
+  isSouthReady: 0
   isWestReady: 0
   isCat: 0
   isStatue: 0

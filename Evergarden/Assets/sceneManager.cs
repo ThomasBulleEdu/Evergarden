@@ -44,17 +44,16 @@ public class sceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-		{
-            StartCoroutine(checkCompassRepeat());
-		}
+        //      if (Input.GetMouseButtonDown(0))
+        //{
+        //          StartCoroutine(checkCompassRepeat());
+        //}
 
-          if (roundTrack == roundTrackMax)
-     {
-          NextLevel.SetActive(true);
-          NextLevelButton.SetActive(true);
-          isInputEnabled = false;
-        }
+        //          if (roundTrack == roundTrackMax)
+        //      {
+        //          NextLevel.SetActive(true);
+        //          isInputEnabled = false;
+        //      }
         if (Input.GetKeyUp("space") && isInputEnabled == true && compassCheckREF.statueExist == true)
         {
             roundTrack++;
